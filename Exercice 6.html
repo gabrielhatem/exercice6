@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form id=paiement>
+            <fieldset>
+                <legend><b>Votre identité</b></legend>
+                    <ol>
+                        <li><label for=nom>Nom :</label> <input id=nom name=nom type=text placeholder="Nom" required autofocus></li>
+                        <li><label for=prénom>Prénom : </label> <input id=prénom name=prénom type=text placeholder="Prénom" required autofocus></li>
+                        <li><label for=email>Adresse mail :</label> <input id=email name=email type=email placeholder="Adresse mail" required></li>
+                    </ol>
+            </fieldset>
+            <fieldset>
+                <legend>Adresse de livraison</legend>
+                    <ol>
+                        <li><label for=adresse>Adresse</label> <textarea id=adresse name=adresse rows=5 required></textarea></li>
+                        <li><label for=codepostal>Code postal</label> <input id=codepostal name=codepostal type=text placeholder="Code postal" required></li>
+                        <li><label for=ville>Ville</label> <input id=ville name=ville type=ville placeholder="Ville" required></li>
+                    </ol>
+            </fieldset>
+            <fieldset>
+                <legend>Informations de règlement</legend>
+                    <ol>
+                        <li>Type de carte bancaire :</li>
+                          <ul>
+                            <li><input id=visa name=type_de_cb type=radio> <label for=visa>VISA</label></li>
+                            <li><input id=mastercard name=type_de_cb type=radio> <label for=mastercard>Mastercard</label></li>
+                          </ul>
+                        <li><label for=numero_de_carte>Numéro de carte</label> <input id=numero_de_carte name=numero_de_carte type=number placeholder="Numéro de carte" required></li>
+                        <li><label for=securite>Code de sécurité</label> <input id=securite name=securite type=number placeholder="Code de sécurité" required></li>
+                        <li><label for=nom_titulaire>Nom du titulaire</label> <input id=nom_titulaire name=nom_titulaire type=text placeholder="Nom du titulaire" required></li>
+                    </ol>
+              </fieldset>
+                            <button type=submit>J'achète !</button>
+    </form>
+</body>
